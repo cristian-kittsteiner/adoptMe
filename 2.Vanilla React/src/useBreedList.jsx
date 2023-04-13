@@ -17,7 +17,7 @@ export default function useBreedList(animal){
 
         async function requestBreedList(){
             setBreedList([]);
-            setStatus("leading")
+            setStatus("loading")
 
             const res = await fetch(
                 `http://pets-v2.dev-apis.com/breeds?animal=${animal}`
